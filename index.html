@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашний пожарный контроль</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Домашний пожарный контроль</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Вход</h2>
+            <input type="text" id="username" placeholder="Имя пользователя">
+            <input type="password" id="password" placeholder="Пароль">
+            <button onclick="login()">Войти</button>
+            <p id="login-message"></p>
+        </section>
+
+        <section id="content" style="display:none;">
+            <h2>Журнал посещений</h2>
+            <button onclick="fetchVisits()">Обновить</button>
+            <ul id="visit-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
